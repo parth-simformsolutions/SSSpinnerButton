@@ -41,7 +41,7 @@ open class SSSpinnerButton: UIButton {
     
     fileprivate var isAnimating: Bool = false
     
-    fileprivate var spinnerType: SpinnerType = .ballClipRotate
+    open var spinnerType: SpinnerType = .ballClipRotate
     
     fileprivate var storedWidth: CGFloat?
     fileprivate var storedHeight: CGFloat?
