@@ -41,7 +41,7 @@ open class SSSpinnerButton: UIButton {
     
     fileprivate var isAnimating: Bool = false
     
-    open var spinnerType: SpinnerType = .ballClipRotate
+    fileprivate var spinnerType: SpinnerType = .ballClipRotate
     
     fileprivate var storedWidth: CGFloat?
     fileprivate var storedHeight: CGFloat?
@@ -195,7 +195,7 @@ public extension SSSpinnerButton {
     ///   - spinnerType: spinner Type ( ballClipRotate(default), ballSpinFade, lineSpinFade, circleStrokeSpin, ballRotateChase)
     ///   - spinnercolor: color of spinner (default = gray)
     ///   - complete: complation block (call after animation start)
-    func startAnimate(spinnerType: SpinnerType = .ballClipRotate, spinnercolor: UIColor = .gray, complete: (() -> Void)?) {
+    @objc open func startAnimate(spinnerType: SpinnerType = .ballClipRotate, spinnercolor: UIColor = .gray, complete: (() -> Void)?) {
         self.startAnimate(spinnerType: spinnerType, spinnercolor: spinnercolor, spinnerSize: nil, complete: complete)
     }
     
