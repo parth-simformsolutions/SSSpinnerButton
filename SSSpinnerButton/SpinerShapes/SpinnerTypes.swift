@@ -19,7 +19,7 @@ import UIKit
 /// - checkMark:
 /// - failMark:
 /// - errorMark:
-public enum SpinnerType: Int {
+@objc public enum SpinnerType: Int {
     /**
      BallClipRotate.
      
